@@ -1,28 +1,17 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using DG.Tweening;
+using UnityEngine.Events;
 
-enum Directions
-{
-    Left,
-    Center,
-    Right
-};
 
-[RequireComponent( typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody))]
 public class CharectorMoving : MonoBehaviour
 {
     [SerializeField] private float _runSpeed;
     [SerializeField] private float _distanceBetweenLine;
-    
-    private Directions _currentDirection;
+    [SerializeField] private UnityEvent _leftStrafe;
+    [SerializeField] private UnityEvent _rightStrafe;
 
-    private void Start()
-    {
-        _currentDirection = Directions.Center;
-    }
+    private int _currentDirection = 1;
 
     private void Update()
     {
@@ -30,29 +19,21 @@ public class CharectorMoving : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            if (_currentDirection == Directions.Center)
+            if (_currentDirection != 0)
             {
-                transform.position = new Vector3(-2.5f,transform.position.y,transform.position.z);
-                _currentDirection = Directions.Left;
-            }
-            else if (_currentDirection == Directions.Right)
-            {
-                transform.position = new Vector3(0f,transform.position.y,transform.position.z);
-                _currentDirection = Directions.Center;
+                _currentDirection--;
+                transform.DOMoveX(transform.position.x - _distanceBetweenLine, 0.2f);
+                _leftStrafe.Invoke();
             }
         }
-        
+
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            if (_currentDirection == Directions.Center)
+            if (_currentDirection != 2)
             {
-                transform.position = new Vector3(2.5f,transform.position.y,transform.position.z);
-                _currentDirection = Directions.Right;
-            }
-            else if (_currentDirection == Directions.Left)
-            {
-                transform.position = new Vector3(0f,transform.position.y,transform.position.z);
-                _currentDirection = Directions.Center;
+                _currentDirection++;
+                transform.DOMoveX(transform.position.x + _distanceBetweenLine, 0.2f);
+                _rightStrafe.Invoke();
             }
         }
     }
