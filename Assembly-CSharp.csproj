@@ -52,7 +52,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\CharectorMoving.cs" />
+     <Compile Include="Assets\Scripts\CharectorMoving.cs" />
      <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
      <None Include="Assets\PolygonPrototype\Shaders\Prototype_Object.shader" />
      <None Include="Assets\PolygonPrototype\Shaders\Prototype_Global.shader" />
@@ -279,11 +279,11 @@
  <Reference Include="UnityEditor.UnityConnectModule">
  <HintPath>D:/Programs/Unity/2020.3.13f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
- <Reference Include="Newtonsoft.Json">
- <HintPath>D:/Git/3D_Endless_Runner/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
- </Reference>
  <Reference Include="DOTween">
  <HintPath>D:/Git/3D_Endless_Runner/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>D:/Git/3D_Endless_Runner/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>D:/Programs/Unity/2020.3.13f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
