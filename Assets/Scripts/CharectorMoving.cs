@@ -4,7 +4,7 @@ using DG.Tweening;
 using UnityEngine.Events;
 
 
-[RequireComponent(typeof(Rigidbody), typeof(Animator))]
+[RequireComponent(typeof(Animator))]
 public class CharectorMoving : MonoBehaviour
 {
     [SerializeField] private float _runSpeed;
@@ -61,7 +61,7 @@ public class CharectorMoving : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision colision)
+    private void OnCollisionStay(Collision colision)
     {
         _isGrounded = true;
         _animator.SetBool("Jump", false);
