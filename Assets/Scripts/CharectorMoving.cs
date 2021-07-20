@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.Events;
@@ -10,6 +9,7 @@ public class CharectorMoving : MonoBehaviour
     [SerializeField] private float _runSpeed;
     [SerializeField] private float _distanceBetweenLine;
     [SerializeField] private float _jumpForce;
+    [SerializeField] private RoadGenerator _roadGenerator;
     [SerializeField] private BoxCollider _boxCollider;
     [SerializeField] private UnityEvent _leftStrafe;
     [SerializeField] private UnityEvent _rightStrafe;
@@ -59,6 +59,11 @@ public class CharectorMoving : MonoBehaviour
             _boxCollider.enabled = false;
             _slide.Invoke();
         }
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        _roadGenerator.DeliteRoad();
     }
 
     private void OnCollisionStay(Collision colision)

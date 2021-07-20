@@ -1,8 +1,5 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Random = System.Random;
 
 public class RoadGenerator : MonoBehaviour
 {
@@ -11,40 +8,54 @@ public class RoadGenerator : MonoBehaviour
     private float _spawnPosition = 0;
     private List<Road> _roadsPool;
     private Road _previousRoad;
+    private Queue<Road> _roadQueue;
 
     private void Start()
     {
+        _roadQueue = new Queue<Road>();
         _roadsPool = new List<Road>();
+
         foreach (var road in _roads)
         {
             _roadsPool.Add(Instantiate(road, transform));
             road.gameObject.SetActive(false);
         }
 
-        PlaceRoad(0);
-        PlaceRoad(1);
-        PlaceRoad(2);
-        PlaceRoad(3);
-        PlaceRoad(4);
-        PlaceRoad(5);
-        PlaceRoad(6);
-        PlaceRoad(7);
-        PlaceRoad(8);
-        PlaceRoad(9);
+        for (int i = 0; i < 3; i++)
+        {
+            ChooseRoad();
+        }
     }
 
+    public void DeliteRoad()
+    {
+        _roadQueue.Peek().gameObject.SetActive(false);
+        _roadQueue.Dequeue();
+        ChooseRoad();
+    }
+    
+    private void ChooseRoad()
+    {
+        int roadIndex = UnityEngine.Random.Range(0, _roadsPool.Count);
+
+        if (_roadsPool[roadIndex].gameObject.activeSelf)
+            ChooseRoad();
+        else
+            PlaceRoad(roadIndex);
+    }
 
     private void PlaceRoad(int roadIndex)
     {
-        Vector3 spawnPosition;
+        Vector3 SpawnPosition;
 
         if (_previousRoad == null)
-            spawnPosition = transform.position;
+            SpawnPosition = transform.position;
         else
-            spawnPosition = _previousRoad.GetComponentInChildren<Сompound>().transform.position;
+            SpawnPosition = _previousRoad.GetComponentInChildren<Сompound>().transform.position;
 
-        _roadsPool[roadIndex].transform.position = spawnPosition;
+        _roadsPool[roadIndex].transform.position = SpawnPosition;
         _previousRoad = _roadsPool[roadIndex];
         _roadsPool[roadIndex].gameObject.SetActive(true);
+        _roadQueue.Enqueue(_roadsPool[roadIndex]);
     }
 }

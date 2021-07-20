@@ -723,6 +723,7 @@ MonoBehaviour:
   _runSpeed: 10
   _distanceBetweenLine: 2.5
   _jumpForce: 2
+  _roadGenerator: {fileID: 225107704}
   _boxCollider: {fileID: 6534128583385835956}
   _leftStrafe:
     m_PersistentCalls:
