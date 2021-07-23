@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2249071489327262320}
   m_Layer: 0
-  m_Name: Money1
+  m_Name: Coin
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154156082549941625}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.9618337, y: 10.952989, z: -33.435833}
+  m_LocalPosition: {x: -3.9618337, y: 10.95, z: -28.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4968413599152377618}
@@ -84,9 +84,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3200138975976930367}
   m_Layer: 0
-  m_Name: Money1 (3)
+  m_Name: Coin
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -98,7 +98,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908740811263297532}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.9618337, y: 10.952989, z: -30.43583}
+  m_LocalPosition: {x: -3.9618337, y: 10.95, z: -25.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4968413599152377618}
@@ -114,9 +114,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5337427872637105881}
   m_Layer: 0
-  m_Name: Money1 (2)
+  m_Name: Coin
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -128,7 +128,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 928572819193336975}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.9618337, y: 10.952989, z: -31.43583}
+  m_LocalPosition: {x: -3.9618337, y: 10.95, z: -26.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4968413599152377618}
@@ -144,9 +144,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2388273113428642248}
   m_Layer: 0
-  m_Name: Money1 (13)
+  m_Name: Coin
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -174,9 +174,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7970953968907793680}
   m_Layer: 0
-  m_Name: Money1 (9)
+  m_Name: Coin
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -204,9 +204,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4513569599126070237}
   m_Layer: 0
-  m_Name: Money1 (1)
+  m_Name: Coin
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -218,7 +218,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700172414499618283}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.9618337, y: 10.952989, z: -32.43583}
+  m_LocalPosition: {x: -3.9618337, y: 10.95, z: -27.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4968413599152377618}
@@ -234,9 +234,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7766491742098113505}
   m_Layer: 0
-  m_Name: Money1 (6)
+  m_Name: Coin
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -264,9 +264,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9139805275227638961}
   m_Layer: 0
-  m_Name: Money1 (4)
+  m_Name: Coin
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -278,7 +278,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3584082996658269671}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.9618337, y: 10.952989, z: -29.43583}
+  m_LocalPosition: {x: -3.9618337, y: 10.95, z: -24.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4968413599152377618}
@@ -294,9 +294,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8774089272714781016}
   m_Layer: 0
-  m_Name: Money1 (10)
+  m_Name: Coin
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -339,7 +339,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4480542156535725559}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.51041734, y: 1.3374333, z: 10.952984}
+  m_LocalPosition: {x: 0.684, y: 1.212, z: 10.5}
   m_LocalScale: {x: 0.1288336, y: 0.99999976, z: 0.039999988}
   m_Children:
   - {fileID: 2249071489327262320}
@@ -381,9 +381,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5981069621270229212}
   m_Layer: 0
-  m_Name: Money1 (12)
+  m_Name: Coin
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -411,9 +411,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4471164177197327649}
   m_Layer: 0
-  m_Name: Money1 (7)
+  m_Name: Coin
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3031,9 +3031,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3552074983334982999}
   m_Layer: 0
-  m_Name: Money1 (5)
+  m_Name: Coin
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3045,7 +3045,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8140582538174549604}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.9618337, y: 10.952989, z: -28.43583}
+  m_LocalPosition: {x: -3.9618337, y: 10.95, z: -23.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4968413599152377618}
@@ -3061,9 +3061,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5789837303820610260}
   m_Layer: 0
-  m_Name: Money1 (8)
+  m_Name: Coin
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3091,9 +3091,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2616281458467080297}
   m_Layer: 0
-  m_Name: Money1 (11)
+  m_Name: Coin
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

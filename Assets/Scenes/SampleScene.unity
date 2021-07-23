@@ -147,11 +147,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225107703}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a6bb1c7e4cdca94c9e39340492973ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _renderDistance: 5
   _roads:
   - {fileID: 1724365302388733436, guid: 68366ce5bb75c8d488de98281cdc7792, type: 3}
   - {fileID: 6498941985380514778, guid: 8a20fe3b94a3f6f4aa0b7ba0b13c3ca8, type: 3}

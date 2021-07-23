@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class RoadGenerator : MonoBehaviour
 {
+    [SerializeField] [Range(3, 7)] private int _renderDistance;
     [SerializeField] private Road[] _roads;
 
     private float _spawnPosition = 0;
@@ -21,7 +22,7 @@ public class RoadGenerator : MonoBehaviour
             road.gameObject.SetActive(false);
         }
 
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < _renderDistance; i++)
         {
             ChooseRoad();
         }
@@ -33,7 +34,7 @@ public class RoadGenerator : MonoBehaviour
         _roadQueue.Dequeue();
         ChooseRoad();
     }
-    
+
     private void ChooseRoad()
     {
         int roadIndex = UnityEngine.Random.Range(0, _roadsPool.Count);
