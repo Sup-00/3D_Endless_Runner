@@ -54,10 +54,12 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\RoadGenerator\Сompound.cs" />
      <Compile Include="Assets\Scripts\CharectorMoving.cs" />
-     <Compile Include="Assets\Scripts\CoinRotate.cs" />
+     <Compile Include="Assets\Scripts\Coin.cs" />
      <Compile Include="Assets\Scripts\CoinSpawnPoint.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\Road.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\RoadGenerator.cs" />
+     <Compile Include="Assets\Scripts\RoadGenerator\CoinPool.cs" />
+     <Compile Include="Assets\Scripts\RoadGenerator\SpawnPoint.cs" />
      <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
      <None Include="Assets\PolygonPrototype\Shaders\Prototype_Object.shader" />
      <None Include="Assets\PolygonPrototype\Shaders\Prototype_Global.shader" />

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33337729004939220}
   - component: {fileID: 23244653920041634}
   - component: {fileID: 3598665287124482560}
+  - component: {fileID: 6945783376814709272}
   m_Layer: 0
   m_Name: SM_Icon_Coin_03
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939600682399660}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.010202, y: 0.5299187, z: 651.4874}
   m_LocalScale: {x: 1.3865, y: 1.3865, z: 1.3865}
   m_Children: []
   m_Father: {fileID: 0}
@@ -94,3 +95,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5288fa02f98d96b4babaddbc4c1652ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6945783376814709272
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939600682399660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.87167, y: 1.0076147, z: 0.11417866}
+  m_Center: {x: -0.010320867, y: 0.002659704, z: 0}

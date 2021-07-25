@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.Events;
@@ -27,9 +28,9 @@ public class CharectorMoving : MonoBehaviour
     private void Update()
     {
         transform.position += Vector3.forward * _runSpeed * Time.deltaTime;
-        
 
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             if (_currentDirection != 0)
             {
@@ -60,11 +61,19 @@ public class CharectorMoving : MonoBehaviour
             _slide.Invoke();
         }
     }
-    
+
     private void OnTriggerEnter(Collider other)
     {
-        _roadGenerator.DeliteRoad();
+        if (other.GetComponent<Coin>())
+        {
+            other.GetComponent<Coin>().gameObject.SetActive(false);
+        }
+        else
+        {
+            _roadGenerator.HideRoad();
+        }
     }
+
 
     private void OnCollisionStay(Collision colision)
     {
