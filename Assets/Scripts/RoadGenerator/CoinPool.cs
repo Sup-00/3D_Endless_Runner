@@ -11,7 +11,7 @@ public class CoinPool : MonoBehaviour
 
     [SerializeField] private List<Coin> _coinPool;
 
-    private void Start()
+    private void Awake()
     {
         _coinPool = new List<Coin>();
 

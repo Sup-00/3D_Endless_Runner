@@ -3612,6 +3612,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6526386530219934203}
   - component: {fileID: 4716097440882191953}
+  - component: {fileID: 4761997843264079783}
   m_Layer: 0
   m_Name: DeliteTrigger
   m_TagString: Untagged
@@ -3646,6 +3647,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.061068073, z: 16.000324}
   m_Center: {x: 0, y: 0.018104037, z: -7.500164}
+--- !u!114 &4761997843264079783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5689171042384933921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79af303c617fa214982ccb6f890a76da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6219125064283680581
 GameObject:
   m_ObjectHideFlags: 0
