@@ -9,7 +9,7 @@ public class Score : MonoBehaviour
     [SerializeField] private TMP_Text _scoreText;
     [SerializeField] private float _score = 0;
 
-    private int _addScoreSize = 30;
+    private int _addScoreSize = 100;
 
     private void Update()
     {
