@@ -9,7 +9,6 @@ public class RoadGenerator : MonoBehaviour
     [SerializeField] private Road[] _roads;
 
     private CoinPool _coinPool;
-    private float _spawnPosition = 0;
     private List<Road> _roadsPool;
     private Road _previousRoad;
     private Queue<Road> _roadQueue;

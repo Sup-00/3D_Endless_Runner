@@ -14,10 +14,14 @@ public class Moving : MonoBehaviour
     [SerializeField] private UnityEvent _leftStrafe;
     [SerializeField] private UnityEvent _rightStrafe;
     [SerializeField] private UnityEvent _slide;
+    [SerializeField] private UnityEvent _dead;
 
     private int _currentDirection = 1;
     private bool _isGrounded;
     private Animator _animator;
+    private bool _isDead = false;
+
+    public int CurrentDirection => _currentDirection;
 
     private void Start()
     {
@@ -28,39 +32,57 @@ public class Moving : MonoBehaviour
     {
         transform.position += Vector3.forward * _runSpeed * Time.deltaTime;
 
-
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (_isDead == false)
         {
-            if (_currentDirection != 0)
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                _currentDirection--;
-                transform.DOMoveX(transform.position.x - _distanceBetweenLine, 0.2f);
-                _leftStrafe.Invoke();
+                if (_currentDirection != 0)
+                {
+                    SideStrafe(-1);
+                    _leftStrafe.Invoke();
+                }
             }
-        }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            if (_currentDirection != 2)
+            if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-                _currentDirection++;
-                transform.DOMoveX(transform.position.x + _distanceBetweenLine, 0.2f);
-                _rightStrafe.Invoke();
+                if (_currentDirection != 2)
+                {
+                    SideStrafe(1);
+                    _rightStrafe.Invoke();
+                }
             }
-        }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) & _isGrounded)
-        {
-            transform.DOMoveY(transform.position.y + _jumpForce, 0.3f);
-        }
+            if (Input.GetKeyDown(KeyCode.UpArrow) & _isGrounded)
+            {
+                transform.DOMoveY(transform.position.y + _jumpForce, 0.3f);
+            }
 
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            _boxCollider.enabled = false;
-            _slide.Invoke();
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                _boxCollider.enabled = false;
+                _slide.Invoke();
+            }
         }
     }
 
+    private void SideStrafe(int side)
+    {
+        SetCurretDirection(side);
+        transform.DOMoveX(_currentDirection * _distanceBetweenLine, 0.2f);
+    }
+
+    public void StopMoving()
+    {
+        _dead.Invoke();
+        _runSpeed = 0;
+        _isDead = true;
+    }
+
+    public void SetCurretDirection(int number)
+    {
+        if (_currentDirection <= 2 && _currentDirection >= 0)
+            _currentDirection += number;
+    }
 
     private void OnCollisionStay(Collision colision)
     {

@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class CoinPool : MonoBehaviour
 {
-    [SerializeField] private int _poolStartSize;
+    [SerializeField] private int _poolSize;
     [SerializeField] private Coin _coinPrefab;
 
     [SerializeField] private List<Coin> _coinPool;
@@ -15,7 +15,7 @@ public class CoinPool : MonoBehaviour
     {
         _coinPool = new List<Coin>();
 
-        for (int i = 0; i < _poolStartSize; i++)
+        for (int i = 0; i < _poolSize; i++)
         {
             InitCoin();
         }

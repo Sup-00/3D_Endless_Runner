@@ -16,4 +16,9 @@ public class Score : MonoBehaviour
          _score += _addScoreSize * Time.deltaTime;
         _scoreText.text = _score.ToString("#");
     }
+
+    public void StopScoreAdding()
+    {
+        _addScoreSize = 0;
+    }
 }

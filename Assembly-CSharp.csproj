@@ -53,7 +53,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\RoadGenerator\Сompound.cs" />
-     <Compile Include="Assets\Scripts\Hit.cs" />
+     <Compile Include="Assets\Scripts\Charector\Dead.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\CoinPool.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\SpawnPoint.cs" />
      <Compile Include="Assets\Scripts\Charector\Moving.cs" />
@@ -66,6 +66,10 @@
      <Compile Include="Assets\Scripts\RoadGenerator\EndRoadTrigger.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\SideBarrier.cs" />
      <Compile Include="Assets\Scripts\Charector\Score.cs" />
+     <Compile Include="Assets\Scripts\Charector\Stumbled.cs" />
+     <Compile Include="Assets\Scripts\ChangeTunnelCamera.cs" />
+     <Compile Include="Assets\Scripts\TunnelEnter.cs" />
+     <Compile Include="Assets\Scripts\TunnelExit.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
