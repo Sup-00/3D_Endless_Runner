@@ -21,7 +21,7 @@ public class Stumbled : MonoBehaviour
         if (other.GetComponent<SideBarrier>())
         {
             _hited.Invoke();
-            if (transform.position.x <= 0 || transform.position.x == 2.5 || transform.position.x == 5)
+            if (transform.position.x <= 0 || transform.position.x == 2.5 || transform.position.x >= 5)
             {
             }
             else if (_moving.CurrentDirection == 0)
