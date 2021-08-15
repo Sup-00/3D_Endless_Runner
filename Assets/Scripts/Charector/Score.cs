@@ -12,9 +12,11 @@ public class Score : MonoBehaviour
     
     private int _addScoreSize;
     private bool _isBoosted = false;
+    private BoosterUI _boosterUI;
 
     private void Start()
     {
+        _boosterUI = FindObjectOfType<BoosterUI>();
         _addScoreSize = _startAddScoreSize;
     }
 
@@ -36,17 +38,14 @@ public class Score : MonoBehaviour
         _addScoreSize = 0;
     }
 
-    public void MultiplayScore(int multiplayer)
+    public void MultiplayScore(int multiplayer, float activeTime)
     {
         if (_isBoosted == false)
         {
             _addScoreSize *= multiplayer;
             _isBoosted = true;
+            _boosterUI.ShowScoreBoostUI(activeTime);
+            StartCoroutine(ActiveTimer(activeTime));
         }
-    }
-
-    public void StartTimer(float activeTime)
-    {
-        StartCoroutine(ActiveTimer(activeTime));
     }
 }

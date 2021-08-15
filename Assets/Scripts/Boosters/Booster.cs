@@ -8,12 +8,14 @@ public abstract class Booster : MonoBehaviour
 {
     [SerializeField] private Vector3 _targetSize;
 
+    protected float _activeTime;
+
     protected void ScaleBooster()
     {
         transform.DOScale(_targetSize, 1f).SetLoops(-1, LoopType.Yoyo);
     }
-    
-    protected void OnTriggerEnter(Collider other)
+
+    protected virtual void OnTriggerEnter(Collider other)
     {
         Boost();
         gameObject.SetActive(false);

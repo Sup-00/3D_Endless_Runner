@@ -50,6 +50,7 @@ public class RoadGenerator : MonoBehaviour
             if (_coinQueue.Any())
             {
                 _coinQueue.Peek().gameObject.SetActive(false);
+                _coinQueue.Peek().ActiveBooster(false);
                 _coinQueue.Dequeue();
             }
         }

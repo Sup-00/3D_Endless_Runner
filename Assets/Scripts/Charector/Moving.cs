@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.Events;
@@ -15,17 +17,22 @@ public class Moving : MonoBehaviour
     [SerializeField] private UnityEvent _rightStrafe;
     [SerializeField] private UnityEvent _slide;
     [SerializeField] private UnityEvent _dead;
-
+    
+    private BoosterUI _boosterUI;
     private int _currentDirection = 1;
     private bool _isGrounded;
     private Animator _animator;
     private bool _isDead = false;
+    private bool _isBoosted = false;
+    private float _defaultJumpForce;
 
     public int CurrentDirection => _currentDirection;
 
     private void Start()
     {
+        _boosterUI = FindObjectOfType<BoosterUI>();
         _animator = GetComponent<Animator>();
+        _defaultJumpForce = _jumpForce;
     }
 
     private void Update()
@@ -94,5 +101,23 @@ public class Moving : MonoBehaviour
     {
         _isGrounded = false;
         _animator.SetBool("Jump", true);
+    }
+
+    private IEnumerator ActiveTimer(float activeTime)
+    {
+        yield return new WaitForSeconds(activeTime);
+        _jumpForce = _defaultJumpForce;
+        _isBoosted = false;
+    }
+
+    public void BoostJumpForce(float activeTime)
+    {
+        if (_isBoosted == false)
+        {
+            _jumpForce *= 3;
+            _isBoosted = true;
+            _boosterUI.ShowSuperJumpUI(activeTime);
+            StartCoroutine(ActiveTimer(activeTime));
+        }
     }
 }

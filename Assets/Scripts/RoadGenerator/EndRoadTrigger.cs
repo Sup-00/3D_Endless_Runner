@@ -11,6 +11,7 @@ public class EndRoadTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        _roadGenerator.HideRoad();
+        if (other.GetComponent<Moving>())
+            _roadGenerator.HideRoad();
     }
 }

@@ -7,10 +7,19 @@ public class Coin : MonoBehaviour
 {
     private Coins _coins;
     private int _coinCount = 1;
-    
+    private Moving _moving;
+    private bool _isBoosted = false;
+
+    private void Update()
+    {
+        if (_isBoosted)
+            transform.DOMove(_moving.transform.position, 0.4f);
+    }
+
     private void Start()
     {
         _coins = FindObjectOfType<Coins>();
+        _moving = FindObjectOfType<Moving>();
         RotateCoin();
     }
 
@@ -23,7 +32,16 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        _coins.AddCoin(_coinCount);
-        transform.gameObject.SetActive(false);
+        if (other.GetComponent<Moving>())
+        {
+            _coins.AddCoin(_coinCount);
+            transform.gameObject.SetActive(false);
+            _isBoosted = false;
+        }
+    }
+
+    public void ActiveBooster(bool state)
+    {
+        _isBoosted = state;
     }
 }
