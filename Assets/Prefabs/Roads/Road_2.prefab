@@ -43,6 +43,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40c17d032c99d4e409c04f3db185f60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &399119866216069311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8529734522269371688}
+  - component: {fileID: 5631859133273141936}
+  m_Layer: 0
+  m_Name: BoosterSpawnPlace
+  m_TagString: Untagged
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8529734522269371688
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399119866216069311}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.173, y: 0.8028, z: -0.45}
+  m_LocalScale: {x: 0.1288336, y: 1, z: 0.039999988}
+  m_Children: []
+  m_Father: {fileID: 6113261440128631790}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5631859133273141936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399119866216069311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b1dfc92a08bebd4fa6c93b649746abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &917457454163683915
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,6 +597,7 @@ Transform:
   - {fileID: 1310475176689634132}
   - {fileID: 3663146280236706641}
   - {fileID: 3809589299631604129}
+  - {fileID: 8529734522269371688}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}

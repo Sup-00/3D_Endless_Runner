@@ -67,6 +67,7 @@
      <Compile Include="Assets\Scripts\RoadGenerator\Barrier.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\Coin.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\CoinSpawnPoint.cs" />
+     <Compile Include="Assets\Scripts\Boosters\BoosterUI.cs" />
      <Compile Include="Assets\Scripts\Charector\Coins.cs" />
      <Compile Include="Assets\Scripts\Boosters\Magnet.cs" />
      <Compile Include="Assets\Scripts\RestartLevel.cs" />
@@ -76,7 +77,7 @@
      <Compile Include="Assets\Scripts\RoadGenerator\EndRoadTrigger.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\SideBarrier.cs" />
      <Compile Include="Assets\Scripts\Charector\Score.cs" />
-     <Compile Include="Assets\Scripts\Boosters\BoosterUI.cs" />
+     <Compile Include="Assets\Scripts\RoadGenerator\BoosterSpawnPlace.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

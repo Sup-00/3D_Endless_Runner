@@ -35,6 +35,7 @@ public class Magnet : MonoBehaviour
     {
         yield return new WaitForSeconds(activeTime);
         _isBoosted = false;
+        transform.GetComponent<BoxCollider>().enabled = false;
     }
 
     private void OnTriggerEnter(Collider other)
