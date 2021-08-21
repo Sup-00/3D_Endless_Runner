@@ -53,9 +53,12 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Boosters\SuperJump.cs" />
+     <Compile Include="Assets\Scripts\UI Scripts\StartLable.cs" />
      <Compile Include="Assets\GUI Kit Casual Game\Casual Game_v2.0\Scripts\PanelControl.cs" />
      <Compile Include="Assets\Scripts\Charector\Stumbled.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\Сompound.cs" />
+     <Compile Include="Assets\Scripts\UI Scripts\UpgradeShopUI.cs" />
+     <Compile Include="Assets\Scripts\Camera\StartRunCameraPosition.cs" />
      <Compile Include="Assets\Scripts\Boosters\ScoreMultiplayer.cs" />
      <Compile Include="Assets\Scripts\Charector\Dead.cs" />
      <Compile Include="Assets\Scripts\Camera\ChangeTunnelCamera.cs" />
@@ -63,6 +66,7 @@
      <Compile Include="Assets\Scripts\RoadGenerator\SpawnPoint.cs" />
      <Compile Include="Assets\Scripts\Boosters\CoinMagnet.cs" />
      <Compile Include="Assets\Scripts\Camera\TunnelExit.cs" />
+     <Compile Include="Assets\Scripts\UI Scripts\ShopUI.cs" />
      <Compile Include="Assets\GUI Kit Casual Game\Casual Game_v2.0\Scripts\Panel.cs" />
      <Compile Include="Assets\Scripts\Boosters\Booster.cs" />
      <Compile Include="Assets\Scripts\Charector\Moving.cs" />
@@ -75,18 +79,14 @@
      <Compile Include="Assets\Scripts\RoadGenerator\BoosterSpawnPlace.cs" />
      <Compile Include="Assets\Scripts\RestartLevel.cs" />
      <Compile Include="Assets\Scripts\Camera\TunnelEnter.cs" />
+     <Compile Include="Assets\Scripts\UI Scripts\RunUI.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\Road.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\RoadGenerator.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\EndRoadTrigger.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\SideBarrier.cs" />
-     <Compile Include="Assets\Scripts\Charector\Score.cs" />
      <Compile Include="Assets\Scripts\UI Scripts\MainMenuUI.cs" />
-     <Compile Include="Assets\Scripts\UI Scripts\ShopUI.cs" />
      <Compile Include="Assets\Scripts\UI Scripts\SkinShopUI.cs" />
-     <Compile Include="Assets\Scripts\UI Scripts\UpgradeShopUI.cs" />
-     <Compile Include="Assets\Scripts\UI Scripts\StartLable.cs" />
-     <Compile Include="Assets\Scripts\UI Scripts\RunUI.cs" />
-     <Compile Include="Assets\Scripts\Camera\StartRunCameraPosition.cs" />
+     <Compile Include="Assets\Scripts\Charector\Score.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
