@@ -657,6 +657,9 @@
  <Reference Include="Unity.TextMeshPro">
  <HintPath>D:/Git/3D_Endless_Runner/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.2D.Sprite.Editor">
+ <HintPath>D:/Git/3D_Endless_Runner/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Git/3D_Endless_Runner/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
@@ -668,9 +671,6 @@
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Git/3D_Endless_Runner/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>D:/Git/3D_Endless_Runner/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -45,7 +45,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7906898105109445573}
   - component: {fileID: 3026839090484822224}
-  - component: {fileID: 6269585386567277978}
   - component: {fileID: 599153801428936532}
   m_Layer: 0
   m_Name: TunnelExitTrigger
@@ -80,19 +79,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5822d731670830f4baaa7130783f4b1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &6269585386567277978
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1119373502174272943}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.1558156, y: 3.73775, z: 4.590557}
-  m_Center: {x: 3.465686, y: 1.8308449, z: 1.4110813}
 --- !u!65 &599153801428936532
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -104,8 +90,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1719818, y: 3.5760787, z: 4.260601}
-  m_Center: {x: 8.516958, y: 1.7500092, z: 1.2461033}
+  m_Size: {x: 10.413553, y: 4.6974025, z: 4.260601}
+  m_Center: {x: 6.036824, y: 2.310671, z: 1.2461033}
 --- !u!1 &1304937005935787934
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,16 +12,16 @@ public class Moving : MonoBehaviour
     [SerializeField] private float _runSpeed;
     [SerializeField] private float _distanceBetweenLine;
     [SerializeField] private float _jumpForce;
+    [SerializeField] private Animator _animator;
     [SerializeField] private BoxCollider _boxCollider;
     [SerializeField] private UnityEvent _leftStrafe;
     [SerializeField] private UnityEvent _rightStrafe;
     [SerializeField] private UnityEvent _slide;
     [SerializeField] private UnityEvent _dead;
-    
+
     private BoosterUI _boosterUI;
     private int _currentDirection = 1;
     private bool _isGrounded;
-    private Animator _animator;
     private bool _isDead = false;
     private bool _isBoosted = false;
     private float _defaultJumpForce;
@@ -30,8 +30,8 @@ public class Moving : MonoBehaviour
 
     private void Start()
     {
+        _animator.SetTrigger("StartGame");
         _boosterUI = FindObjectOfType<BoosterUI>();
-        _animator = GetComponent<Animator>();
         _defaultJumpForce = _jumpForce;
     }
 
