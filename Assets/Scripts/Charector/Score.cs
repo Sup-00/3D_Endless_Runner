@@ -14,6 +14,8 @@ public class Score : MonoBehaviour
     private bool _isBoosted = false;
     private BoosterUI _boosterUI;
 
+    public float PlayerScore => _score;
+
     private void Start()
     {
         _boosterUI = FindObjectOfType<BoosterUI>();

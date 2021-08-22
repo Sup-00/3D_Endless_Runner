@@ -8,12 +8,12 @@ public class StartLable : MonoBehaviour
 {
     private TMP_Text _text;
 
-    private void Start()
+    private void OnEnable()
     {
         _text = GetComponent<TMP_Text>();
         StartCoroutine(IncreaseLable());
     }
-    
+
 
     private IEnumerator IncreaseLable()
     {
