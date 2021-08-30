@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Magnet : MonoBehaviour
+public class Magnet : Booster
 {
     private bool _isBoosted = false;
     private Moving _moving;
@@ -11,6 +11,7 @@ public class Magnet : MonoBehaviour
 
     private void Start()
     {
+        ScaleBooster();
         _boosterUI = FindObjectOfType<BoosterUI>();
         _moving = FindObjectOfType<Moving>();
     }
@@ -48,5 +49,10 @@ public class Magnet : MonoBehaviour
                 coin.ActiveBooster(true);
             }
         }
+    }
+
+    protected override void Boost()
+    {
+        ActiveMagnet(_activeTime);
     }
 }

@@ -6,16 +6,16 @@ using UnityEngine;
 public class SuperJump : Booster
 {
     private Moving _moving;
-    
+    private UpgradeSuperJumpBoosterUI _upgradeSuperJumpBoosterUI;
+
     private void Start()
     {
         ScaleBooster();
         _moving = FindObjectOfType<Moving>();
-        _activeTime = 30;
     }
 
     protected override void Boost()
     {
-        _moving.BoostJumpForce(_activeTime);
+        _moving.BoostJumpForce(_upgradeSuperJumpBoosterUI.ActiveTime);
     }
 }

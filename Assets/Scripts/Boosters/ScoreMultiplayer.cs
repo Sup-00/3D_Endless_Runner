@@ -6,17 +6,17 @@ using UnityEngine;
 public class ScoreMultiplayer : Booster
 {
     private Score _score;
+    private UpgradeScoreBoosterUI _upgradeScoreBoosterUI;
 
     private void Start()
     {
+        _upgradeScoreBoosterUI = FindObjectOfType<UpgradeScoreBoosterUI>();
         ScaleBooster();
-        _activeTime = 30;
         _score = FindObjectOfType<Score>();
     }
 
     protected override void Boost()
     {
-        _score.MultiplayScore(2, _activeTime);
+        _score.MultiplayScore(2, _upgradeScoreBoosterUI.ActiveTime);
     }
-    
 }

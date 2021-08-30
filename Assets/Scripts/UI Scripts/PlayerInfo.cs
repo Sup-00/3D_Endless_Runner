@@ -39,14 +39,33 @@ public class PlayerInfo : MonoBehaviour
         }
 
         _playerMoney += money;
-        _mainMenuPlayerMoneyUI.text = _shopPlayerMoneyUI.text = _playerMoney.ToString();
-
+        RenredMoneyUI();
         SavePlayerStats();
+    }
+
+    private void RenredMoneyUI()
+    {
+        _mainMenuPlayerMoneyUI.text = _shopPlayerMoneyUI.text = _playerMoney.ToString();
     }
 
     private void SavePlayerStats()
     {
         PlayerPrefs.SetFloat("BestScore", _bestScore);
         PlayerPrefs.SetFloat("PlayerMoney", _playerMoney);
+    }
+
+    public bool TrySubtractMoney(int count)
+    {
+        if (_playerMoney >= count)
+        {
+            _playerMoney -= count;
+            RenredMoneyUI();
+            SavePlayerStats();
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

@@ -4,8 +4,8 @@ using UnityEngine;
 public class Coins : MonoBehaviour
 {
     [SerializeField] private TMP_Text _moneyText;
-    
-    private int _coin;
+
+    [SerializeField] private int _coin;
 
     public int PlayerCoins => _coin;
 

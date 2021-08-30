@@ -8,12 +8,18 @@ public abstract class Booster : MonoBehaviour
 {
     [SerializeField] private Vector3 _targetSize;
 
-    protected float _activeTime;
+    protected float _activeTime = 10f;
+
+    public void SetActiveTime(float time)
+    {
+        _activeTime = time;
+    }
 
     protected void ScaleBooster()
     {
         transform.DOScale(_targetSize, 1f).SetLoops(-1, LoopType.Yoyo);
     }
+
 
     protected virtual void OnTriggerEnter(Collider other)
     {

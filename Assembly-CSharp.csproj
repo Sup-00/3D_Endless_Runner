@@ -52,6 +52,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\UI Scripts\PlayerInfo.cs" />
      <Compile Include="Assets\Scripts\Boosters\SuperJump.cs" />
      <Compile Include="Assets\Scripts\UI Scripts\StartLable.cs" />
      <Compile Include="Assets\GUI Kit Casual Game\Casual Game_v2.0\Scripts\PanelControl.cs" />
@@ -64,7 +65,6 @@
      <Compile Include="Assets\Scripts\Camera\ChangeTunnelCamera.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\CoinPool.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\SpawnPoint.cs" />
-     <Compile Include="Assets\Scripts\Boosters\CoinMagnet.cs" />
      <Compile Include="Assets\Scripts\Camera\TunnelExit.cs" />
      <Compile Include="Assets\Scripts\UI Scripts\ShopUI.cs" />
      <Compile Include="Assets\GUI Kit Casual Game\Casual Game_v2.0\Scripts\Panel.cs" />
@@ -72,8 +72,10 @@
      <Compile Include="Assets\Scripts\Charector\Moving.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\Barrier.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\Coin.cs" />
+     <Compile Include="Assets\Scripts\UI Scripts\UpgradeShop\UpgradeShopElement.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\CoinSpawnPoint.cs" />
      <Compile Include="Assets\Scripts\Boosters\BoosterUI.cs" />
+     <Compile Include="Assets\Scripts\UI Scripts\UpgradeShop\UpgradeMagnetUI.cs" />
      <Compile Include="Assets\Scripts\Charector\Coins.cs" />
      <Compile Include="Assets\Scripts\Boosters\Magnet.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\BoosterSpawnPlace.cs" />
@@ -87,7 +89,8 @@
      <Compile Include="Assets\Scripts\UI Scripts\MainMenuUI.cs" />
      <Compile Include="Assets\Scripts\UI Scripts\SkinShopUI.cs" />
      <Compile Include="Assets\Scripts\Charector\Score.cs" />
-     <Compile Include="Assets\Scripts\UI Scripts\PlayerInfo.cs" />
+     <Compile Include="Assets\Scripts\UI Scripts\UpgradeShop\UpgradeScoreBoosterUI.cs" />
+     <Compile Include="Assets\Scripts\UI Scripts\UpgradeShop\UpgradeSuperJumpBoosterUI.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
