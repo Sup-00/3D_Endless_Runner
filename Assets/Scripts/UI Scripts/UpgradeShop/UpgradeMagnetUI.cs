@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class UpgradeMagnetUI : UpgradeShopElement
 {
-    [SerializeField] private Magnet _magnet;
+    [SerializeField] private CoinMagnet _coinMagnet;
 
     private void Start()
     {
@@ -16,6 +16,6 @@ public class UpgradeMagnetUI : UpgradeShopElement
 
     protected override void Boost()
     {
-        _magnet.SetActiveTime(_timer);
+        _coinMagnet.SetActiveTime(_timer);
     }
 }

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6490058446511952704}
   - component: {fileID: 6518610770570793404}
   - component: {fileID: 6509125576178401520}
-  - component: {fileID: 6486469968159910483}
   - component: {fileID: 6486469968159910482}
+  - component: {fileID: 1246340534150610892}
   m_Layer: 0
   m_Name: CoinMagnetBooster
   m_TagString: Untagged
@@ -83,19 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6486469968159910483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6486469968159910480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8abca88bbbf593a46839957d04e0489a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _targetSize: {x: 1.2, y: 1.2, z: 1.2}
 --- !u!65 &6486469968159910482
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -109,3 +96,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.61184037, y: 0.63848114, z: 0.49738654}
   m_Center: {x: -0.000016525388, y: -0.0012557656, z: 0}
+--- !u!114 &1246340534150610892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6486469968159910480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03fea0ecf647a6a4090050101ff4a912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetSize: {x: 1.2, y: 1.2, z: 1.2}

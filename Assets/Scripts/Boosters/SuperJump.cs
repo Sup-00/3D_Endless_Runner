@@ -11,6 +11,7 @@ public class SuperJump : Booster
     private void Start()
     {
         ScaleBooster();
+        _upgradeSuperJumpBoosterUI = FindObjectOfType<UpgradeSuperJumpBoosterUI>();
         _moving = FindObjectOfType<Moving>();
     }
 

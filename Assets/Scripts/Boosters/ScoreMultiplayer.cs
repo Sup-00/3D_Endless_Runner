@@ -10,9 +10,9 @@ public class ScoreMultiplayer : Booster
 
     private void Start()
     {
+        _score = FindObjectOfType<Score>();
         _upgradeScoreBoosterUI = FindObjectOfType<UpgradeScoreBoosterUI>();
         ScaleBooster();
-        _score = FindObjectOfType<Score>();
     }
 
     protected override void Boost()
