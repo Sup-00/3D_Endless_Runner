@@ -48,9 +48,10 @@ public abstract class UpgradeShopElement : MonoBehaviour
         PlayerPrefs.SetInt(_saveKeyName, _level);
     }
 
-    protected void LoadStats()
+    public void LoadStats()
     {
         if (PlayerPrefs.HasKey(_saveKeyName))
+
             _level = PlayerPrefs.GetInt(_saveKeyName);
         else
             _level = 1;

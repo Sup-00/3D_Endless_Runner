@@ -12,6 +12,7 @@ public class ScoreMultiplayer : Booster
     {
         _score = FindObjectOfType<Score>();
         _upgradeScoreBoosterUI = FindObjectOfType<UpgradeScoreBoosterUI>();
+        _upgradeScoreBoosterUI.LoadStats();
         ScaleBooster();
     }
 

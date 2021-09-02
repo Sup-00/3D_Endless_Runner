@@ -132,9 +132,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 61175258}
-  - component: {fileID: 61175259}
   m_Layer: 5
-  m_Name: Score Booster
+  m_Name: Super Jump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,32 +163,6 @@ RectTransform:
   m_AnchoredPosition: {x: 189.99, y: -344.77002}
   m_SizeDelta: {x: 355.98, y: 195.96}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &61175259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61175257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2bcf849263af3344b946470116ef064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _levelUI:
-  - {fileID: 251055202}
-  - {fileID: 1583844997}
-  - {fileID: 1966621015}
-  - {fileID: 979352293}
-  - {fileID: 117932096}
-  _prices: f4010000dc050000b80b000088130000
-  _times:
-  - 15
-  - 30
-  - 60
-  - 75
-  - 90
-  _priceTXT: {fileID: 699724658}
 --- !u!1 &66431716
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,7 +868,7 @@ Transform:
   - {fileID: 234977154}
   - {fileID: 950620656}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &234977153
 GameObject:
@@ -1086,6 +1059,9 @@ GameObject:
   - component: {fileID: 268939351}
   - component: {fileID: 268939355}
   - component: {fileID: 268939356}
+  - component: {fileID: 268939358}
+  - component: {fileID: 268939357}
+  - component: {fileID: 268939359}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1169,7 +1145,7 @@ RectTransform:
   - {fileID: 920591722}
   - {fileID: 247653065}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1204,6 +1180,85 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scene: {fileID: 102900000, guid: 9fc0d4010bbf28b4594072e72b8655ab, type: 3}
+--- !u!114 &268939357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268939350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe62df96a9454c4dbe9740c4adb15b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelUI:
+  - {fileID: 251055202}
+  - {fileID: 1583844997}
+  - {fileID: 1966621015}
+  - {fileID: 979352293}
+  - {fileID: 117932096}
+  _prices: f4010000dc050000b80b000088130000
+  _times:
+  - 15
+  - 30
+  - 60
+  - 75
+  - 90
+  _priceTXT: {fileID: 699724658}
+--- !u!114 &268939358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268939350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb8e4d7bd19b67144b5bab0dba2b3c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelUI:
+  - {fileID: 497451079}
+  - {fileID: 381999084}
+  - {fileID: 511459570}
+  - {fileID: 573709465}
+  - {fileID: 2117078047}
+  _prices: f4010000dc050000b80b000088130000
+  _times:
+  - 15
+  - 30
+  - 60
+  - 75
+  - 90
+  _priceTXT: {fileID: 1293434370}
+  _coinMagnet: {fileID: 1246340534150610892, guid: f98e34b868a95714aa852a8f913533fc, type: 3}
+--- !u!114 &268939359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268939350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2bcf849263af3344b946470116ef064, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelUI:
+  - {fileID: 1414220032}
+  - {fileID: 806627274}
+  - {fileID: 756539867}
+  - {fileID: 1907593126}
+  - {fileID: 1679715567}
+  _prices: f4010000dc050000b80b000088130000
+  _times:
+  - 15
+  - 30
+  - 60
+  - 75
+  - 90
+  _priceTXT: {fileID: 1766464088}
 --- !u!1 &274835865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,7 +1597,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 61175259}
+      - m_Target: {fileID: 268939357}
         m_TargetAssemblyTypeName: UpgradeShopElement, Assembly-CSharp
         m_MethodName: BuyUpgrade
         m_Mode: 1
@@ -2246,6 +2301,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 497451077}
   m_CullTransparentMesh: 1
+--- !u!1001 &497588297
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.324273
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5885895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.185633
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399106604586647991, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_Name
+      value: SuperJumpBooster
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
 --- !u!1 &511459568
 GameObject:
   m_ObjectHideFlags: 0
@@ -2385,7 +2497,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &543137138
 GameObject:
@@ -4339,9 +4451,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 889257512}
-  - component: {fileID: 889257513}
   m_Layer: 5
-  m_Name: SuperJump
+  m_Name: Score Booster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4371,32 +4482,6 @@ RectTransform:
   m_AnchoredPosition: {x: 189.99, y: -536.56}
   m_SizeDelta: {x: 355.98, y: 195.96}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &889257513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889257511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffe62df96a9454c4dbe9740c4adb15b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _levelUI:
-  - {fileID: 1414220032}
-  - {fileID: 806627274}
-  - {fileID: 756539867}
-  - {fileID: 1907593126}
-  - {fileID: 1679715567}
-  _prices: f4010000dc050000b80b000088130000
-  _times:
-  - 15
-  - 30
-  - 60
-  - 75
-  - 90
-  _priceTXT: {fileID: 1766464088}
 --- !u!1 &894995917
 GameObject:
   m_ObjectHideFlags: 0
@@ -4653,7 +4738,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 950620656}
-  - component: {fileID: 950620657}
   m_Layer: 0
   m_Name: BoosterGenerator
   m_TagString: Untagged
@@ -4675,18 +4759,6 @@ Transform:
   m_Father: {fileID: 225107705}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &950620657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950620655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89e5e777210118644bde053bb3520b71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &960076850
 GameObject:
   m_ObjectHideFlags: 0
@@ -4723,63 +4795,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.000022888184, y: 0}
   m_SizeDelta: {x: 0.000053406, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &960735269
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2778491008768811767, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
-      propertyPath: m_Name
-      value: MultiplayScoreBooster
-      objectReference: {fileID: 0}
-    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.3802242
-      objectReference: {fileID: 0}
-    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.60923743
-      objectReference: {fileID: 0}
-    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -8.076032
-      objectReference: {fileID: 0}
-    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -5140,6 +5155,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1005547745}
   m_CullTransparentMesh: 1
+--- !u!1001 &1037991703
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6486469968159910480, guid: f98e34b868a95714aa852a8f913533fc, type: 3}
+      propertyPath: m_Name
+      value: CoinMagnetBooster
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490058446511952704, guid: f98e34b868a95714aa852a8f913533fc, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490058446511952704, guid: f98e34b868a95714aa852a8f913533fc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.3966427
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490058446511952704, guid: f98e34b868a95714aa852a8f913533fc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3204964
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490058446511952704, guid: f98e34b868a95714aa852a8f913533fc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.383725
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490058446511952704, guid: f98e34b868a95714aa852a8f913533fc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490058446511952704, guid: f98e34b868a95714aa852a8f913533fc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490058446511952704, guid: f98e34b868a95714aa852a8f913533fc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490058446511952704, guid: f98e34b868a95714aa852a8f913533fc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490058446511952704, guid: f98e34b868a95714aa852a8f913533fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490058446511952704, guid: f98e34b868a95714aa852a8f913533fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490058446511952704, guid: f98e34b868a95714aa852a8f913533fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f98e34b868a95714aa852a8f913533fc, type: 3}
 --- !u!1 &1079421687
 GameObject:
   m_ObjectHideFlags: 0
@@ -5425,6 +5497,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136984842}
   m_CullTransparentMesh: 1
+--- !u!1001 &1194422573
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2778491008768811767, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
+      propertyPath: m_Name
+      value: MultiplayScoreBooster
+      objectReference: {fileID: 0}
+    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.256093
+      objectReference: {fileID: 0}
+    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.60923654
+      objectReference: {fileID: 0}
+    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.725191
+      objectReference: {fileID: 0}
+    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2782217457412863295, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
 --- !u!1 &1204940856
 GameObject:
   m_ObjectHideFlags: 0
@@ -7839,7 +7968,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1804661955}
+      - m_Target: {fileID: 268939358}
         m_TargetAssemblyTypeName: UpgradeShopElement, Assembly-CSharp
         m_MethodName: BuyUpgrade
         m_Mode: 1
@@ -7973,7 +8102,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1804661954}
-  - component: {fileID: 1804661955}
   m_Layer: 5
   m_Name: Magnet
   m_TagString: Untagged
@@ -8005,33 +8133,6 @@ RectTransform:
   m_AnchoredPosition: {x: 189.99, y: -152.98001}
   m_SizeDelta: {x: 355.98, y: 195.96}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1804661955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1804661953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb8e4d7bd19b67144b5bab0dba2b3c3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _levelUI:
-  - {fileID: 497451079}
-  - {fileID: 381999084}
-  - {fileID: 511459570}
-  - {fileID: 573709465}
-  - {fileID: 2117078047}
-  _prices: f4010000dc050000b80b000088130000
-  _times:
-  - 15
-  - 30
-  - 60
-  - 75
-  - 90
-  _priceTXT: {fileID: 1293434370}
-  _coinMagnet: {fileID: 1246340534150610892, guid: f98e34b868a95714aa852a8f913533fc, type: 3}
 --- !u!1 &1805220406
 GameObject:
   m_ObjectHideFlags: 0
@@ -8152,7 +8253,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 889257513}
+      - m_Target: {fileID: 268939359}
         m_TargetAssemblyTypeName: UpgradeShopElement, Assembly-CSharp
         m_MethodName: BuyUpgrade
         m_Mode: 1
@@ -8823,7 +8924,7 @@ Transform:
   m_LocalScale: {x: 7.76195, y: 16.213642, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &6534128583385835537
 GameObject:
@@ -9224,6 +9325,7 @@ MonoBehaviour:
   _scoreText: {fileID: 1358231398}
   _score: 0
   _startAddScoreSize: 100
+  _boosterUI: {fileID: 1290278704}
 --- !u!114 &6534128583385835958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9944,7 +10046,7 @@ Transform:
   - {fileID: 963194228}
   - {fileID: 1726405193}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6534128583386330511
 Transform:

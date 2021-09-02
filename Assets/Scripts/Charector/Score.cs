@@ -9,16 +9,16 @@ public class Score : MonoBehaviour
     [SerializeField] private TMP_Text _scoreText;
     [SerializeField] private float _score = 0;
     [SerializeField] private int _startAddScoreSize;
-    
+    [SerializeField] private BoosterUI _boosterUI;
+
     private int _addScoreSize;
     private bool _isBoosted = false;
-    private BoosterUI _boosterUI;
 
     public float PlayerScore => _score;
 
     private void Start()
     {
-        _boosterUI = FindObjectOfType<BoosterUI>();
+        //_boosterUI = FindObjectOfType<BoosterUI>();
         _addScoreSize = _startAddScoreSize;
     }
 
@@ -34,7 +34,7 @@ public class Score : MonoBehaviour
         _addScoreSize = _startAddScoreSize;
         _isBoosted = false;
     }
-    
+
     public void StopScoreAdding()
     {
         _addScoreSize = 0;
