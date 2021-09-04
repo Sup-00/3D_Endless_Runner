@@ -17,7 +17,7 @@ public class StartLable : MonoBehaviour
 
     private IEnumerator IncreaseLable()
     {
-        while (_text.fontSize < 30f)
+        while (_text.fontSize < 28f)
         {
             _text.fontSize += 0.1f;
             yield return null;
