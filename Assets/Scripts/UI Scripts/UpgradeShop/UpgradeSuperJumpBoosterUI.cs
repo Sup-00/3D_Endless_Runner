@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class UpgradeSuperJumpBoosterUI : UpgradeShopElement
 {
-    public float ActiveTime => _timer;
+    public float ActiveTime => Timer;
 
     private void Start()
     {
-        _saveKeyName = "SuperJumpUpgrade";
+        SaveKeyName = "SuperJumpUpgrade";
         LoadStats();
         ShowInfo();
     }

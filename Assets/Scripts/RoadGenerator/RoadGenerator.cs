@@ -1,14 +1,13 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
 public class RoadGenerator : MonoBehaviour
 {
+    [SerializeField] private CoinPool _coinPool;
     [SerializeField] [Range(3, 7)] private int _renderDistance;
     [SerializeField] private Road[] _roads;
 
-    private CoinPool _coinPool;
     private List<Road> _roadsPool;
     private Road _previousRoad;
     private Queue<Road> _roadQueue;
@@ -17,7 +16,6 @@ public class RoadGenerator : MonoBehaviour
     private void Start()
     {
         _coinQueue = new Queue<Coin>();
-        _coinPool = GetComponentInChildren<CoinPool>();
         _roadQueue = new Queue<Road>();
         _roadsPool = new List<Road>();
 

@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class UpgradeMagnetUI : UpgradeShopElement
@@ -9,13 +6,13 @@ public class UpgradeMagnetUI : UpgradeShopElement
 
     private void Start()
     {
-        _saveKeyName = "MagnetUpgrade";
+        SaveKeyName = "MagnetUpgrade";
         LoadStats();
         ShowInfo();
     }
 
     protected override void Boost()
     {
-        _coinMagnet.SetActiveTime(_timer);
+        _coinMagnet.SetActiveTime(Timer);
     }
 }

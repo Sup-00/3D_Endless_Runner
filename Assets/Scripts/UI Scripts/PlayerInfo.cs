@@ -1,9 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerInfo : MonoBehaviour
 {
@@ -13,16 +9,18 @@ public class PlayerInfo : MonoBehaviour
 
     private float _playerMoney;
     private float _bestScore;
+    private const string BEST_SCORE = "BestScore";
+    private const string PLAYER_MONEY = "PlayerMoney";
 
     private void Awake()
     {
-        if (PlayerPrefs.HasKey("BestScore"))
-            _bestScore = PlayerPrefs.GetFloat("BestScore");
+        if (PlayerPrefs.HasKey(BEST_SCORE))
+            _bestScore = PlayerPrefs.GetFloat(BEST_SCORE);
         else
             _bestScore = 0f;
 
-        if (PlayerPrefs.HasKey("PlayerMoney"))
-            _playerMoney = PlayerPrefs.GetFloat("PlayerMoney");
+        if (PlayerPrefs.HasKey(PLAYER_MONEY))
+            _playerMoney = PlayerPrefs.GetFloat(PLAYER_MONEY);
         else
             _playerMoney = 0f;
 
@@ -50,8 +48,8 @@ public class PlayerInfo : MonoBehaviour
 
     private void SavePlayerStats()
     {
-        PlayerPrefs.SetFloat("BestScore", _bestScore);
-        PlayerPrefs.SetFloat("PlayerMoney", _playerMoney);
+        PlayerPrefs.SetFloat(BEST_SCORE, _bestScore);
+        PlayerPrefs.SetFloat(PLAYER_MONEY, _playerMoney);
     }
 
     public bool TrySubtractMoney(int count)

@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -18,7 +16,6 @@ public class Score : MonoBehaviour
 
     private void Start()
     {
-        //_boosterUI = FindObjectOfType<BoosterUI>();
         _addScoreSize = _startAddScoreSize;
     }
 

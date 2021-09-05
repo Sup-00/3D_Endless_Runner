@@ -1,17 +1,17 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(CharectorMoving), typeof(Score))]
 public class Dead : MonoBehaviour
 {
     [SerializeField] private UnityEvent _showLossScreen;
-    
+
     private Score _score;
-    private Moving _moving;
+    private CharectorMoving _charectorMoving;
 
     private void Start()
     {
-        _moving = FindObjectOfType<Moving>();
+        _charectorMoving = FindObjectOfType<CharectorMoving>();
         _score = FindObjectOfType<Score>();
     }
 
@@ -21,7 +21,7 @@ public class Dead : MonoBehaviour
         {
             _showLossScreen.Invoke();
             _score.StopScoreAdding();
-            _moving.StopMoving();
+            _charectorMoving.StopMoving();
         }
     }
 }

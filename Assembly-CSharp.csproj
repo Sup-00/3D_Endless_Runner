@@ -70,7 +70,7 @@
      <Compile Include="Assets\GUI Kit Casual Game\Casual Game_v2.0\Scripts\Panel.cs" />
      <Compile Include="Assets\Scripts\Boosters\Booster.cs" />
      <Compile Include="Assets\Scripts\UI Scripts\UpgradeShop\UpgradeScoreBoosterUI.cs" />
-     <Compile Include="Assets\Scripts\Charector\Moving.cs" />
+     <Compile Include="Assets\Scripts\Charector\CharectorMoving.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\Barrier.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\Coin.cs" />
      <Compile Include="Assets\Scripts\UI Scripts\UpgradeShop\UpgradeShopElement.cs" />
@@ -78,7 +78,7 @@
      <Compile Include="Assets\Scripts\RoadGenerator\CoinSpawnPoint.cs" />
      <Compile Include="Assets\Scripts\Boosters\BoosterUI.cs" />
      <Compile Include="Assets\Scripts\UI Scripts\UpgradeShop\UpgradeMagnetUI.cs" />
-     <Compile Include="Assets\Scripts\Charector\Coins.cs" />
+     <Compile Include="Assets\Scripts\Charector\CoinCollecter.cs" />
      <Compile Include="Assets\Scripts\Boosters\MagnetCollider.cs" />
      <Compile Include="Assets\Scripts\RoadGenerator\BoosterSpawnPlace.cs" />
      <Compile Include="Assets\Scripts\RestartLevel.cs" />

@@ -1,14 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 public class UpgradeScoreBoosterUI : UpgradeShopElement
 {
-    public float ActiveTime => _timer;
+    public float ActiveTime => Timer;
 
     private void Start()
     {
-        _saveKeyName = "ScoreBoosterUpgrade";
+        SaveKeyName = "ScoreBoosterUpgrade";
         LoadStats();
         ShowInfo();
     }

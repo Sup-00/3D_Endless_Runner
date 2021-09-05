@@ -1,14 +1,10 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class CoinPool : MonoBehaviour
 {
     [SerializeField] private int _poolSize;
     [SerializeField] private Coin _coinPrefab;
-
     [SerializeField] private List<Coin> _coinPool;
 
     private void Awake()

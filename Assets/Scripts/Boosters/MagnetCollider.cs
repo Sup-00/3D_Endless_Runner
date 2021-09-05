@@ -1,18 +1,17 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(BoxCollider))]
 public class MagnetCollider : MonoBehaviour
 {
     [SerializeField] private BoosterUI _boosterUI;
 
     private bool _isBoosted = false;
-    private Moving _moving;
+    private CharectorMoving _charectorMoving;
 
     private void Awake()
     {
-        _moving = FindObjectOfType<Moving>();
+        _charectorMoving = FindObjectOfType<CharectorMoving>();
     }
 
     public void ActiveMagnet(float activeTime)
