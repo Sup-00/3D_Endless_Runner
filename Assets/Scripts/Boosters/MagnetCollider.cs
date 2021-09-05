@@ -1,11 +1,11 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(BoxCollider))]
 public class MagnetCollider : MonoBehaviour
 {
-    [SerializeField] private BoosterUI _boosterUI;
-
+    [SerializeField] private UnityEvent OnBoost;
     private bool _isBoosted = false;
     private CharectorMoving _charectorMoving;
 
@@ -20,7 +20,7 @@ public class MagnetCollider : MonoBehaviour
         {
             GetComponent<BoxCollider>().enabled = true;
             _isBoosted = true;
-            _boosterUI.ShowMagnetUI(activeTime);
+            OnBoost?.Invoke();
             StartCoroutine(ActiveTimer(activeTime));
         }
     }

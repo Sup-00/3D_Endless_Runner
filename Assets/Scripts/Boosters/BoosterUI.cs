@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 public class BoosterUI : MonoBehaviour
 {
+    [SerializeField] private CoinMagnet _coinMagnet;
+    [SerializeField] private SuperJump _superJump;
+    [SerializeField] private ScoreMultiplayer _scoreMultiplayer;
     [SerializeField] private GameObject _magnetUI;
     [SerializeField] private GameObject _superJumpUI;
     [SerializeField] private GameObject _scoreBoostUI;
@@ -25,18 +28,18 @@ public class BoosterUI : MonoBehaviour
         UI.SetActive(false);
     }
 
-    public void ShowSuperJumpUI(float activeTime)
+    public void ShowSuperJumpUI()
     {
-        StartCoroutine(ActiveTimer(activeTime, _superJumpSlider, _superJumpUI));
+        StartCoroutine(ActiveTimer(_superJump.ActiveTime, _superJumpSlider, _superJumpUI));
     }
 
-    public void ShowMagnetUI(float activeTime)
+    public void ShowMagnetUI()
     {
-        StartCoroutine(ActiveTimer(activeTime, _magnetSlider, _magnetUI));
+        StartCoroutine(ActiveTimer(_coinMagnet.ActiveTime, _magnetSlider, _magnetUI));
     }
 
-    public void ShowScoreBoostUI(float activeTime)
+    public void ShowScoreBoostUI()
     {
-        StartCoroutine(ActiveTimer(activeTime, _scoreBoostSlider, _scoreBoostUI));
+        StartCoroutine(ActiveTimer(_scoreMultiplayer.ActiveTime, _scoreBoostSlider, _scoreBoostUI));
     }
 }

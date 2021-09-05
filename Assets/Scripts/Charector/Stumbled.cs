@@ -5,7 +5,7 @@ using DG.Tweening;
 [RequireComponent(typeof(CharectorMoving))]
 public class Stumbled : MonoBehaviour
 {
-    [SerializeField] private UnityEvent _hited;
+    [SerializeField] private UnityEvent OnHeat;
 
     private CharectorMoving _charectorMoving;
 
@@ -18,7 +18,7 @@ public class Stumbled : MonoBehaviour
     {
         if (other.GetComponent<SideBarrier>())
         {
-            _hited.Invoke();
+            OnHeat?.Invoke();
             if (transform.position.x <= 0 || transform.position.x == 2.5 || transform.position.x >= 5)
             {
             }

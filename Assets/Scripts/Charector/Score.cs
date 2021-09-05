@@ -1,13 +1,14 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Score : MonoBehaviour
 {
+    [SerializeField] private UnityEvent OnBoost;
     [SerializeField] private TMP_Text _scoreText;
     [SerializeField] private float _score = 0;
     [SerializeField] private int _startAddScoreSize;
-    [SerializeField] private BoosterUI _boosterUI;
 
     private int _addScoreSize;
     private bool _isBoosted = false;
@@ -43,7 +44,7 @@ public class Score : MonoBehaviour
         {
             _addScoreSize *= multiplayer;
             _isBoosted = true;
-            _boosterUI.ShowScoreBoostUI(activeTime);
+            OnBoost?.Invoke();
             StartCoroutine(ActiveTimer(activeTime));
         }
     }

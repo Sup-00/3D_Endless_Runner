@@ -5,7 +5,8 @@ public abstract class Booster : MonoBehaviour
 {
     [SerializeField] private Vector3 _targetSize;
 
-    protected float ActiveTime = 10f;
+    public float ActiveTime { get; private set; }
+
 
     public void SetActiveTime(float time)
     {

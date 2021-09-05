@@ -1,17 +1,37 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Events;
+
 public class SuperJump : Booster
 {
     private CharectorMoving _charectorMoving;
-    private UpgradeSuperJumpBoosterUI _upgradeSuperJumpBoosterUI;
+    private BoosterUI _boosterUI;
+    private float _basicJumpForce;
 
     private void Start()
     {
         ScaleBooster();
-        _upgradeSuperJumpBoosterUI = FindObjectOfType<UpgradeSuperJumpBoosterUI>();
         _charectorMoving = FindObjectOfType<CharectorMoving>();
+        _basicJumpForce = _charectorMoving.JumpForce;
     }
 
     protected override void Boost()
     {
-        _charectorMoving.BoostJumpForce(_upgradeSuperJumpBoosterUI.ActiveTime);
+        _boosterUI = FindObjectOfType<BoosterUI>();
+
+        if (_charectorMoving.IsBooted == false)
+        {
+            _charectorMoving.SetJumpBooster(_basicJumpForce * 3f, true);
+            _boosterUI.ShowSuperJumpUI();
+            StartCoroutine(ActiveTimer());
+        }
+    }
+
+    private IEnumerator ActiveTimer()
+    {
+        yield return new WaitForSeconds(ActiveTime);
+        _charectorMoving.SetJumpBooster(_basicJumpForce, false);
     }
 }

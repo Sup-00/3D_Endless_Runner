@@ -869,7 +869,7 @@ Transform:
   - {fileID: 234977154}
   - {fileID: 950620656}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &234977153
 GameObject:
@@ -1146,7 +1146,7 @@ RectTransform:
   - {fileID: 920591722}
   - {fileID: 247653065}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2441,7 +2441,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &543137138
 GameObject:
@@ -4873,6 +4873,67 @@ RectTransform:
   m_AnchoredPosition: {x: 7.5, y: -27.8}
   m_SizeDelta: {x: 122.3849, y: 41.5641}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &978136428
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5490875
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.58858854
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.2023315
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396395438848531989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399106604586647991, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_Name
+      value: SuperJumpBooster
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399106604586647991, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
 --- !u!1 &979352291
 GameObject:
   m_ObjectHideFlags: 0
@@ -5719,6 +5780,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48b80c762dab8f243949dac6d5bf8ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coinMagnet: {fileID: 1246340534150610892, guid: f98e34b868a95714aa852a8f913533fc, type: 3}
+  _superJump: {fileID: 7399106604586647989, guid: 805ee3264037a0744ba8f378c50db0d6, type: 3}
+  _scoreMultiplayer: {fileID: 2778491008768811766, guid: 145587585092a5f41a7bfc498786a62b, type: 3}
   _magnetUI: {fileID: 788606751}
   _superJumpUI: {fileID: 587950604}
   _scoreBoostUI: {fileID: 684596864}
@@ -7254,7 +7318,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d2956ab480e234ea5d396cb92e07fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _boosterUI: {fileID: 1290278704}
+  OnBoost:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1290278704}
+        m_TargetAssemblyTypeName: BoosterUI, Assembly-CSharp
+        m_MethodName: ShowMagnetUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1742509395
 GameObject:
   m_ObjectHideFlags: 0
@@ -8636,7 +8714,7 @@ Transform:
   m_LocalScale: {x: 7.76195, y: 16.213642, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &6534128583385835537
 GameObject:
@@ -8919,7 +8997,7 @@ MonoBehaviour:
   _jumpForce: 1.5
   _animator: {fileID: 6534128583393221241}
   _boxCollider: {fileID: 6534128583385835956}
-  _leftStrafe:
+  OnLeftStrafe:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6534128583393221241}
@@ -8934,7 +9012,7 @@ MonoBehaviour:
           m_StringArgument: LeftStrafe
           m_BoolArgument: 0
         m_CallState: 2
-  _rightStrafe:
+  OnRightStrafe:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6534128583393221241}
@@ -8949,7 +9027,7 @@ MonoBehaviour:
           m_StringArgument: RightStrafe
           m_BoolArgument: 0
         m_CallState: 2
-  _slide:
+  OnSlide:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6534128583393221241}
@@ -8964,7 +9042,7 @@ MonoBehaviour:
           m_StringArgument: Slide
           m_BoolArgument: 0
         m_CallState: 2
-  _dead:
+  OnDead:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6534128583393221241}
@@ -9034,10 +9112,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f23acf71cbf054ab63f1e4ccb96b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnBoost:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1290278704}
+        m_TargetAssemblyTypeName: BoosterUI, Assembly-CSharp
+        m_MethodName: ShowScoreBoostUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _scoreText: {fileID: 1358231398}
   _score: 0
   _startAddScoreSize: 100
-  _boosterUI: {fileID: 1290278704}
 --- !u!114 &6534128583385835958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9050,9 +9142,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60a8f1a79c7ab034bbd8db418f1cc791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showLossScreen:
+  OnShowLossScreen:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 6534128583393221241}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Dead
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 673509537}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -9077,7 +9181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e65ea3c519412d74fb2c925b3ee0cb60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hited:
+  OnHeat:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6534128583393221241}
@@ -9758,7 +9862,7 @@ Transform:
   - {fileID: 963194228}
   - {fileID: 1726405193}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6534128583386330511
 Transform:

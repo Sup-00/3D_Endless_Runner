@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.Events;
@@ -12,25 +11,26 @@ public class CharectorMoving : MonoBehaviour
     [SerializeField] private float _jumpForce;
     [SerializeField] private Animator _animator;
     [SerializeField] private BoxCollider _boxCollider;
-    [SerializeField] private UnityEvent _leftStrafe;
-    [SerializeField] private UnityEvent _rightStrafe;
-    [SerializeField] private UnityEvent _slide;
-    [SerializeField] private UnityEvent _dead;
+    [SerializeField] private UnityEvent OnLeftStrafe;
+    [SerializeField] private UnityEvent OnRightStrafe;
+    [SerializeField] private UnityEvent OnSlide;
+    [SerializeField] private UnityEvent OnDead;
 
-    private BoosterUI _boosterUI;
     private int _currentDirection = 1;
     private bool _isGrounded;
     private bool _isDead = false;
     private bool _isBoosted = false;
-    private float _defaultJumpForce;
+
+    private const string START_GAME_ANIMATION = "StartGame";
+    private const string JUMP_ANIMATION = "Jump";
 
     public int CurrentDirection => _currentDirection;
+    public float JumpForce => _jumpForce;
+    public bool IsBooted => _isBoosted;
 
     private void Start()
     {
-        _animator.SetTrigger("StartGame");
-        _boosterUI = FindObjectOfType<BoosterUI>();
-        _defaultJumpForce = _jumpForce;
+        _animator.SetTrigger(START_GAME_ANIMATION);
     }
 
     private void Update()
@@ -44,7 +44,7 @@ public class CharectorMoving : MonoBehaviour
                 if (_currentDirection != 0)
                 {
                     SideStrafe(-1);
-                    _leftStrafe.Invoke();
+                    OnLeftStrafe?.Invoke();
                 }
             }
 
@@ -53,7 +53,7 @@ public class CharectorMoving : MonoBehaviour
                 if (_currentDirection != 2)
                 {
                     SideStrafe(1);
-                    _rightStrafe.Invoke();
+                    OnRightStrafe?.Invoke();
                 }
             }
 
@@ -65,7 +65,7 @@ public class CharectorMoving : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 _boxCollider.enabled = false;
-                _slide.Invoke();
+                OnSlide?.Invoke();
             }
         }
     }
@@ -78,7 +78,7 @@ public class CharectorMoving : MonoBehaviour
 
     public void StopMoving()
     {
-        _dead.Invoke();
+        OnDead?.Invoke();
         _runSpeed = 0;
         _isDead = true;
     }
@@ -92,30 +92,18 @@ public class CharectorMoving : MonoBehaviour
     private void OnCollisionStay(Collision colision)
     {
         _isGrounded = true;
-        _animator.SetBool("Jump", false);
+        _animator.SetBool(JUMP_ANIMATION, false);
     }
 
     private void OnCollisionExit(Collision collision)
     {
         _isGrounded = false;
-        _animator.SetBool("Jump", true);
+        _animator.SetBool(JUMP_ANIMATION, true);
     }
 
-    private IEnumerator ActiveTimer(float activeTime)
+    public void SetJumpBooster(float jumpForce, bool isBoosted)
     {
-        yield return new WaitForSeconds(activeTime);
-        _jumpForce = _defaultJumpForce;
-        _isBoosted = false;
-    }
-
-    public void BoostJumpForce(float activeTime)
-    {
-        if (_isBoosted == false)
-        {
-            _jumpForce *= 3;
-            _isBoosted = true;
-            _boosterUI.ShowSuperJumpUI(activeTime);
-            StartCoroutine(ActiveTimer(activeTime));
-        }
+        _jumpForce = jumpForce;
+        _isBoosted = isBoosted;
     }
 }

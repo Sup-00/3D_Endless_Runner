@@ -4,7 +4,7 @@ using UnityEngine.Events;
 [RequireComponent(typeof(CharectorMoving), typeof(Score))]
 public class Dead : MonoBehaviour
 {
-    [SerializeField] private UnityEvent _showLossScreen;
+    [SerializeField] private UnityEvent OnShowLossScreen;
 
     private Score _score;
     private CharectorMoving _charectorMoving;
@@ -19,7 +19,7 @@ public class Dead : MonoBehaviour
     {
         if (other.GetComponent<Barrier>())
         {
-            _showLossScreen.Invoke();
+            OnShowLossScreen?.Invoke();
             _score.StopScoreAdding();
             _charectorMoving.StopMoving();
         }
